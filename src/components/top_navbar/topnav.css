@@ -1,0 +1,68 @@
+.t_nav{
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background-color: rgb(235, 232, 232);
+    position: sticky;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logotitle{
+    flex:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.logo2{
+    height: 35px;
+    width: 130px;
+    border-radius: 5px;
+}
+
+.profile{
+    flex: 20%;
+}
+
+.navbar{
+    flex:60%;
+    /* border: 1px solid red; */
+}
+
+.navlist{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: rgb(97, 97, 97);
+}
+
+.lists{
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.lists:hover{
+    border-bottom: 2px solid rgb(97, 97, 97);;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 50%;
+    margin: 7px;
+    cursor: pointer;
+}
