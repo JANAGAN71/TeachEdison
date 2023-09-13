@@ -1,4 +1,5 @@
 import "../login/login.css"
+import Register from "../register/register"
 
 export default function login() {
   return (
@@ -12,7 +13,10 @@ export default function login() {
                     <input type="text" name="" id="" placeholder="Enter Your Password" />
                     <button className="loginBtn">Login</button>
                 </form>
-                <button className="regBtn">Register</button>
+                <div className="registerLink">
+                  <p>If not registered yet: </p>
+                  <a href= {Register}>Register Now</a>
+                </div>
             </div>
     </div>
   )

@@ -29,7 +29,6 @@ export default function Settings() {
                     <button className="submitBtn">Update</button>
                 </form>
             </div>
-            <Sidebar />
         </div>
     )
 }

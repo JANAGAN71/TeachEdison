@@ -5,7 +5,6 @@ export default function single() {
   return (
     <div className="singlePage">
     <SinglePost />
-      <SideBar />
     </div>
   )
 }

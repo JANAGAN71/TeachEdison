@@ -5,18 +5,19 @@ import Create_Article from './components/create/create'
 import SettingsPage from "./components/settings/settings"
 import Login from "./components/login/login"
 import Register from "./components/register/register"
-
+import About from "./components/about/about"
 
 function App() {
   return (
     <>
     <TopNavBar />
-    <Home />
+    {/* <Home /> */}
     {/* <ShowArticle /> */}
     {/* <Create_Article /> */}
-    {/* <SettingsPage /> */}
+    <SettingsPage />
     {/* <Login /> */}
     {/* <Register /> */}
+    {/* <About /> */}
     </>
   );
 }

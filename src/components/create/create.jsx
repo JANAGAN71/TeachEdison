@@ -17,6 +17,10 @@ export default function create() {
           <input type="text" className="writeInp" placeholder="Title" autoFocus={true} />
         </div>
         <div className="createGrp">
+        <input type="text" className="AuthorNameInp" placeholder="Author Name" autoFocus={true} />
+        </div>
+
+        <div className="createGrp">
           <textarea name="" className="writeText" cols="30" rows="10" placeholder="Tell About Your Thoughts..."></textarea>
         </div>
         <div className="createGrp">
