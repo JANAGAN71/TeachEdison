@@ -1,5 +1,4 @@
 import "../create/create.css"
-
 import UploadImage from "../create/6g.jpg"
 
 export default function create() {

@@ -21,6 +21,7 @@ export default function TopNavBar(){
         </div>
         <div className="profile">
         <img src= {profilepic} alt="Profile" />
+        <span>My Profile</span>
         </div>
         </div>
     )

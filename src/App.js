@@ -1,5 +1,6 @@
 import TopNavBar from "./components/top_navbar/topnav"
 import Home from "./components/home/home"
+import Filter from "./components/serach_filter/filter"
 import ShowArticle from "./components/show_article/show"
 import Create_Article from './components/create/create'
 import SettingsPage from "./components/settings/settings"
@@ -11,10 +12,10 @@ function App() {
   return (
     <>
     <TopNavBar />
-    {/* <Home /> */}
+    <Home />
     {/* <ShowArticle /> */}
     {/* <Create_Article /> */}
-    <SettingsPage />
+    {/* <SettingsPage /> */}
     {/* <Login /> */}
     {/* <Register /> */}
     {/* <About /> */}

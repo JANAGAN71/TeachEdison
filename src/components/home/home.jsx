@@ -1,13 +1,13 @@
 import "../home/home.css"
-import Header from "../header/header.jsx"
+import SearchFilter from "../serach_filter/filter.jsx"
 import Articles from "../articles/article.jsx"
-import Sidebar from "../sidebar/sidebar.jsx"
-
+import { useState } from "react"
 
 export default function Home() {
+    const [selected, setSelected] = useState("Categories");
     return (
         <>
-            <Header />
+            <SearchFilter selected={selected} setSelected={setSelected} />
             <div className="homePage">
                 <Articles />
                 {/* <Sidebar /> */}

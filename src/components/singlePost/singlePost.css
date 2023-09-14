@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 5px;
     padding-right: 10px;
     margin: 5px 0;
@@ -12,6 +12,7 @@
 .singlePostwrap{
     padding: 20px;
     padding-right: 10px;
+    background-color: #fff;
 }
 
 .postImg {
@@ -66,17 +67,4 @@
 .postInfo b{
     font-weight: bolder;
     font-family: 'Poppins', sans-serif;
-}
-
-.postdesc{
-    color: #333333;
-    font-size: 20px;
-    margin: 5px;
-}
-
-.postdesc::first-letter{
-    margin-left: 30px;
-    font-size: 30px;
-    color: #444;
-    font-weight: bold;
 }
