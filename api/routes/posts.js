@@ -181,24 +181,32 @@ router.get("/:id", async (req, res) => {
 
 //GET ALL POSTS
 router.get("/", async (req, res) => {
-    const title = req.query.title;
-    const catName = req.query.cat;
-    try {
-        let posts;
-        if (title) {
-            posts = await Post.find({ title });
-        } 
-        else if (catName) {
-            posts = await Post.find({
-                categories: {
-                    $in: [catName],
-                },
-            });
-        }
-        res.status(200).json(posts);
-    } catch (err) {
-        res.status(500).json(err);
+    try{
+        const data = await Post.find();
+        res.send(data);
     }
+    catch(err){
+        res.send(err);
+    }
+
+    // const title = req.query.title;
+    // const catName = req.query.cat;
+    // try {
+    //     let posts;
+    //     if (title) {
+    //         posts = await Post.find({ title });
+    //     } 
+    //     else if (catName) {
+    //         posts = await Post.find({
+    //             categories: {
+    //                 $in: [catName],
+    //             },
+    //         });
+    //     }
+    //     res.status(200).json(posts);
+    // } catch (err) {
+    //     res.status(500).json(err);
+    // }
 });
 
 module.exports = router;
