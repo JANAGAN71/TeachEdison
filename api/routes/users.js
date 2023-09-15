@@ -41,7 +41,7 @@ router.delete("/:id", async (req, res) => {
             }
         }
         catch (err) {
-            res.status(401).json("You can delete only your account!");
+            res.status(401).json("You can delete only your article!");
         }
     } else {
         res.status(401).json("Unauthorized");
