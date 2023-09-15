@@ -4,13 +4,13 @@ const Categories = require("../models/Category");
 
 
 //Post Category
-router.post("/", async (req, res)=>{
+router.post("/", async (req, res) => {
     const newCategory = new Categories(req.body);
-    try{
+    try {
         const savedCategory = await newCategory.save();
         res.status(200).json(savedCategory);
     }
-    catch(err){
+    catch (err) {
         res.status(500).json(err);
     }
 });
@@ -18,11 +18,11 @@ router.post("/", async (req, res)=>{
 
 //Get All Categories
 router.get("/", async (req, res) => {
-    try{
+    try {
         const allCate = await Categories.find();
         res.status(200).json(allCate);
     }
-    catch(err){
+    catch (err) {
         res.status(500).json(err);
     }
 })
