@@ -12,22 +12,19 @@ import Content from "./components/article_content/art_cont.jsx"
 
 function App() {
   return (
-    // <Router>
-    //   <div className="App">
-    //     <Routes>
-    //       <Route path="/" element={<Home/>}/>
-    //       <Route path="/about" element={<About /> }/>
-    //       <Route path="/show" element={<ShowArticle/>}/>
-    //       <Route path="/create" element={<Create_Article /> }/>
-    //       <Route path="/settings" element={<SettingsPage /> }/>
-    //       <Route path="/login" element={<Login /> }/>
-    //       <Route path="/register" element={<Register /> }/>
-    //     </Routes>
-    //   </div>
-    // </Router>
-    <>
-    <Login />
-    </>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About /> }/>
+          <Route path="/show" element={<ShowArticle/>}/>
+          <Route path="/create" element={<Create_Article /> }/>
+          <Route path="/settings" element={<SettingsPage /> }/>
+          <Route path="/login" element={<Login /> }/>
+          <Route path="/register" element={<Register /> }/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
