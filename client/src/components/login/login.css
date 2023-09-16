@@ -9,6 +9,21 @@
     align-items: center;
 }
 
+.web_title{
+    position: absolute;
+    margin: 15px 25px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    border: 2px solid black;
+    padding: 2px 5px;
+    border-radius: 5px 0 5px 0;
+    background-color: rgb(36, 36, 36);
+}
+
+
 .loginContent{
     width: 300px;
     display: flex;
@@ -17,9 +32,9 @@
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
-        background-color: rgba(255, 255, 255, 0.2);
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 

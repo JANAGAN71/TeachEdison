@@ -1,4 +1,8 @@
 .homePage{
     display: flex;
-    background-color: #111111;
+    background-color: #f2faff;
+}
+
+*::-webkit-scrollbar{
+    display: none;
 }

@@ -23,16 +23,16 @@ mongoose.connect('mongodb://127.0.0.1:27017/Article', {
     });
 
 
-    const storage = multer.diskStorage({
-        destination: (req, file, cb) => {
-            cb(null, req.body.name);
-        },
-    });
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, req.body.name);
+    },
+});
 
-    const upload = multer({storage: storage});
-    app.post("/api/upload", upload.single("file"), (req, res) => {
-        res.status(200).json("File has been Uploaded");
-    });
+const upload = multer({ storage: storage });
+app.post("/api/upload", upload.single("file"), (req, res) => {
+    res.status(200).json("File has been Uploaded");
+});
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);

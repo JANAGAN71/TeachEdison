@@ -1,18 +1,22 @@
 .createPage{
-    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .createForm{
     position: relative;
+    width: 80%;
 }
 
 .createGrp{
-    border: 2px solid black;
+    border: 1.5px solid black;
     margin: 20px;
     display: flex;
-    justify-content: flex-start;
-    border-radius: 10px;
+    justify-content: center;
     align-items: center;
+    border-radius: 10px;
     padding: 5px;
 }
 

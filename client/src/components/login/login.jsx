@@ -3,12 +3,16 @@ import Register from "../register/register"
 
 export default function login() {
   return (
+    <>
+    <div className="web_title">
+        <span>LECTIO</span>
+      </div>
     <div className="loginPage">
       <div className="loginContent">
                 <span className="loginTitle">Login</span>
                 <form action="" className="loginForm">
                     <label htmlFor="">Email Id</label>
-                    <input type="text" name="" id="" placeholder="Enter Your Email ID" />
+                    <input type="password"  id="" placeholder="Enter Your Email ID" />
                     <label htmlFor="">Password</label>
                     <input type="text" name="" id="" placeholder="Enter Your Password" />
                     <button className="loginBtn">Login</button>
@@ -19,5 +23,6 @@ export default function login() {
                 </div>
             </div>
     </div>
+      </>
   )
 }
