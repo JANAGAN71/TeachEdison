@@ -7,20 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.web_title{
-    position: absolute;
-    margin: 15px 25px;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: white;
-    border: 2px solid black;
-    padding: 2px 5px;
-    border-radius: 5px 0 5px 0;
-    background-color: rgb(36, 36, 36);
+    position: relative;
 }
 
 
@@ -84,14 +71,19 @@
     cursor: pointer;
 }
 
-.registerLink{
-    margin: 5px;
-    font-size: 18px;
-}
-
-.registerLink a{
-    color: blue;
-    font-weight: 600;
-    text-decoration: underline;
+.regBtn{
+    position: absolute;
+    top: 0;
+    left: 84%;
+    height: 35px;
+    width: 200px;
+    font-style: 18px;
+    align-self: center;
+    font-size: 16px;
+    background-color: teal;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
     cursor: pointer;
 }
